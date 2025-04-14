@@ -118,10 +118,17 @@ nav {
 
 .nav-links {
     display: flex;
+    align-items: center;
 }
 
-.nav-links li {
+.nav-links li:not(.theme-toggle):not(.language-switcher) {
     margin-left: 20px;
+}
+
+/* Push theme toggle and language switcher to the right */
+.nav-links li.theme-toggle,
+.nav-links li.language-switcher {
+    margin-left: auto;
 }
 
 .nav-links a {
@@ -447,14 +454,21 @@ footer {
         padding: 0 15px;
     }
     .nav-links {
-        margin-top: 1rem;
-        margin-left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .nav-links li {
-        margin-left: 0;
+    
+    .nav-links li:not(.theme-toggle):not(.language-switcher) {
+        margin: 5px 10px;
+    }
+    
+    .nav-links li.theme-toggle,
+    .nav-links li.language-switcher {
+        margin: 5px 10px;
+    }
+    
+    .language-switcher {
+        margin-left: 10px;
     }
     #hero {
         padding: 2rem 15px;
@@ -526,41 +540,130 @@ footer {
      /* Add other adjustments for tablet size if needed */
 }
 
-/* Theme Toggle Button */
+/* Theme Toggle */
 .theme-toggle {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-#theme-toggle-btn {
-    background: none;
-    border: none;
-    color: var(--text-primary);
-    cursor: pointer;
-    padding: 8px;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+.celestial-toggle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#theme-toggle-btn:hover {
-    color: var(--accent-color);
-}
-
-/* Add transition effects for smooth theme switching */
-.project-card,
-.card-content,
-#tech-stack,
-header,
-.nav-links a,
-.social-icons a {
+/* Sun and Moon Icons */
+.celestial-toggle i {
+    position: absolute;
+    font-size: 24px;
     transition: all 0.3s ease;
+}
+
+.celestial-toggle .fa-sun {
+    color: #FFA500;
+    opacity: 1;
+}
+
+.celestial-toggle .fa-moon {
+    color: #f1c40f;
+    opacity: 0;
+}
+
+/* Light Theme State */
+[data-theme="light"] .celestial-toggle .fa-sun {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+[data-theme="light"] .celestial-toggle .fa-moon {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+}
+
+/* Dark Theme State */
+[data-theme="dark"] .celestial-toggle .fa-sun {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+}
+
+[data-theme="dark"] .celestial-toggle .fa-moon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+/* Hover Effects */
+.theme-toggle:hover .celestial-toggle {
+    transform: scale(1.1);
+}
+
+/* Click Animation */
+.theme-toggle:active .celestial-toggle {
+    transform: scale(0.9);
+}
+
+/* Add glow effects */
+.celestial-toggle .fa-sun {
+    filter: drop-shadow(0 0 8px rgba(255, 165, 0, 0.4));
+}
+
+.celestial-toggle .fa-moon {
+    filter: drop-shadow(0 0 8px rgba(241, 196, 15, 0.4));
+}
+
+/* Stars (visible in dark mode) */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #f1c40f;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 1.5s infinite;
+}
+
+.star:nth-child(1) { top: 20%; left: 20%; animation-delay: 0s; }
+.star:nth-child(2) { top: 30%; left: 70%; animation-delay: 0.3s; }
+.star:nth-child(3) { top: 70%; left: 30%; animation-delay: 0.6s; }
+.star:nth-child(4) { top: 60%; left: 80%; animation-delay: 0.9s; }
+
+[data-theme="dark"] .stars {
+    opacity: 1;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Sun Ray Animation */
+@keyframes sunRayPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
 /* Language Switcher Dropdown */
 .language-switcher {
     display: flex;
     align-items: center;
-    margin-left: 15px; /* Add some space */
+    margin-left: 15px;
 }
 
 #language-select {
@@ -571,9 +674,9 @@ header,
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9rem;
-    margin-left: 5px; /* Space after toggle */
     outline: none;
     transition: border-color 0.3s ease, background-color 0.3s ease;
+    min-width: 120px;
 }
 
 #language-select:focus {

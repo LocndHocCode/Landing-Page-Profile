@@ -7,39 +7,32 @@
 
 // Theme switcher functionality
 document.addEventListener('DOMContentLoaded', () => {
-    const themeToggleBtn = document.getElementById('theme-toggle-btn');
-    const themeIcon = themeToggleBtn.querySelector('i');
+    // Theme Toggle
+    const themeToggle = document.querySelector('.theme-toggle');
+    const celestialToggle = document.querySelector('.celestial-toggle');
+    const body = document.body;
 
-    // Check for saved theme preference, otherwise use system preference
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    // Set initial theme
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme === 'dark');
-    } else if (prefersDark) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        updateThemeIcon(true);
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'light-theme';
+    body.setAttribute('data-theme', savedTheme === 'dark-theme' ? 'dark' : 'light');
+
+    // Set initial rotation CSS variable
+    celestialToggle.style.setProperty('--rotation', savedTheme === 'dark-theme' ? '180deg' : '0deg');
+
+    // Toggle theme on click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            // Toggle theme
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme === 'dark' ? 'dark-theme' : 'light-theme');
+            
+            // Update rotation CSS variable
+            celestialToggle.style.setProperty('--rotation', newTheme === 'dark' ? '180deg' : '0deg');
+        });
     }
-
-    // Toggle theme function
-    function toggleTheme() {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme === 'dark');
-    }
-
-    // Update icon based on theme
-    function updateThemeIcon(isDark) {
-        themeIcon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
-    }
-
-    // Add click event listener
-    themeToggleBtn.addEventListener('click', toggleTheme);
 });
 
 // --- i18next Initialization and Language Switching --- 
