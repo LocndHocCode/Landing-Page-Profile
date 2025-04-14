@@ -1,0 +1,485 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Choose a suitable font */
+    background-color: #ffffff; /* Changed to white background */
+    color: #121212; /* Changed to dark text color for contrast */
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit; /* Or set a specific link color */
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden; /* Might need adjustments */
+}
+
+.highlight {
+    color: #ff6b6b; /* Example highlight color, adjust as needed */
+}
+
+/* Header/Nav */
+header {
+    background: #f8f9fa; /* Changed to light gray background */
+    padding: 1rem 0;
+    position: sticky; /* Optional: make navbar sticky */
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #dee2e6; /* Add a subtle border */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Remove or comment out the .logo span rule if it exists */
+/*
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+*/
+
+.logo-img {
+    height: 40px; /* Adjust height as needed */
+    width: auto;
+    display: block; /* Prevents extra space below image */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #6c757d; /* Darker gray for links */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #343a40; /* Even darker on hover */
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 4rem 20px;
+}
+
+#hero .avatar {
+    width: 150px; /* Adjust size */
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    /* Add gradient border if needed */
+}
+
+#hero h1 {
+    font-size: 2.8rem; /* Adjust size */
+    margin-bottom: 1rem;
+}
+
+#hero .subtitle {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    color: #6c757d; /* Darker gray for subtitle */
+}
+
+.hero-buttons button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #343a40; /* Dark background for primary button */
+    color: #ffffff; /* White text */
+    border: 1px solid #343a40;
+}
+
+.btn-primary:hover {
+    background-color: #23272b; /* Slightly darker on hover */
+    border-color: #1d2124;
+}
+
+.btn-secondary {
+    background-color: #e9ecef; /* Light gray background */
+    color: #343a40; /* Dark text */
+    border: 1px solid #ced4da; /* Gray border */
+}
+
+.btn-secondary:hover {
+    background-color: #dee2e6; /* Slightly darker gray on hover */
+}
+
+/* Tech Stack Section */
+#tech-stack {
+    text-align: center;
+    padding: 2rem 20px;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+#tech-stack h2 {
+    color: #6c757d; /* Darker gray */
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+#tech-stack .logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Increased gap slightly */
+    align-items: center;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+}
+
+/* Remove old span styling */
+/*
+#tech-stack .logos span {
+    padding: 10px 15px;
+    background-color: #e9ecef; 
+    color: #343a40; 
+    border-radius: 50%;
+}
+*/
+
+#tech-stack .logos i {
+    color: #495057; /* Set icon color */
+    /* fa-2x already sets size */
+}
+
+/* Projects Section */
+#projects {
+    padding: 4rem 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#projects h2 {
+    text-align: center;
+    color: #fd7e14; /* Adjusted Orange color */
+    margin-bottom: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    /* background-color: #ffffff; */ /* Keep image background */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* For positioning content */
+    /* Remove border and shadow from light theme if they exist */
+    border: none; 
+    box-shadow: none;
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+}
+
+.project-card .card-content {
+    padding: 1rem; /* Adjust padding as needed */
+    background-color: #1f1f1f; /* Dark background like original image */
+}
+
+.card-subtitle {
+    display: block;
+    font-size: 0.75rem; /* Slightly smaller */
+    color: #a0a0a0; /* Light gray color */
+    margin-bottom: 0.3rem;
+    text-transform: uppercase; /* Make uppercase like image */
+    letter-spacing: 0.5px;
+}
+
+.card-content h3 {
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* White color for title */
+    font-size: 1.1rem; /* Adjust size if needed */
+}
+
+.arrow-link {
+    font-size: 1.2rem; /* Adjust icon size */
+    color: #a0a0a0; /* Light gray color */
+    position: absolute;
+    bottom: 1rem; /* Position at bottom */
+    right: 1rem; /* Position at right */
+    transition: color 0.3s ease;
+}
+
+.arrow-link:hover {
+    color: #ffffff; /* White on hover */
+}
+
+/* Experience Section */
+#experience {
+    padding: 4rem 20px;
+    max-width: 900px; /* Slightly narrower */
+    margin: auto;
+}
+
+#experience h2 {
+    text-align: center;
+    color: #007bff; /* Adjusted Blue color */
+    margin-bottom: 2rem;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Remove old company-logo img styling */
+/*
+.company-logo {
+    width: 40px; 
+    height: 40px;
+    flex-shrink: 0;
+}
+*/
+
+/* Style for Font Awesome company logo icons */
+.company-logo-icon {
+    color: #6c757d; /* Set icon color */
+    width: 40px; /* Define width for alignment */
+    text-align: center; /* Center icon horizontally */
+    flex-shrink: 0;
+    margin-top: 5px; /* Adjust vertical alignment slightly */
+    /* fa-2x class handles the size */
+}
+
+.experience-details h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    color: #343a40; /* Darker heading */
+}
+
+.duration {
+    display: block;
+    font-size: 0.9rem;
+    color: #6c757d; /* Darker gray */
+    margin-bottom: 0.5rem;
+}
+
+.experience-details p {
+    color: #495057; /* Slightly lighter dark gray for paragraph */
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+    color: #343a40; /* Dark heading */
+}
+
+#contact p {
+    max-width: 600px;
+    margin: 0 auto 1rem auto;
+    color: #6c757d; /* Darker gray */
+}
+
+#contact .email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem; /* Slightly increased gap */
+    margin-bottom: 1.5rem;
+}
+
+#contact .email a {
+    color: #007bff; /* Blue link color */
+    font-weight: bold;
+}
+
+#contact .email a:hover {
+    text-decoration: underline;
+}
+
+/* Remove old icon img styling */
+/*
+#contact .icon {
+    width: 20px;
+    height: 20px;
+}
+*/
+
+/* Style for Font Awesome email icon */
+#contact .email .icon {
+    color: #6c757d; /* Set icon color */
+    font-size: 1.2rem; /* Adjust size if needed */
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #6c757d; /* Set base color for social icons */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #343a40; /* Darker color on hover */
+}
+
+/* Remove old social-icons img styling */
+/*
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8; 
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+*/
+
+/* Font Awesome social icons already styled by .social-icons a */
+/* fa-lg class sets the size */
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 20px;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #6c757d; /* Darker gray */
+}
+
+/* Add Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 15px;
+    }
+    .nav-links {
+        margin-top: 1rem;
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-links li {
+        margin-left: 0;
+    }
+    #hero {
+        padding: 2rem 15px;
+    }
+    #hero h1 {
+        font-size: 2rem;
+    }
+    #hero .avatar {
+        width: 120px;
+        height: 120px;
+    }
+    .hero-buttons button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+    #tech-stack,
+    #projects,
+    #experience,
+    #contact {
+        padding: 2.5rem 15px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .experience-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .company-logo-icon {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+    .experience-details {
+        margin-top: 1rem;
+    }
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 992px) {
+    .container,
+    nav {
+        max-width: 960px; /* Adjust container width */
+    }
+
+    #hero h1 {
+        font-size: 2.4rem; /* Slightly smaller heading */
+    }
+
+    #hero .subtitle {
+        max-width: 550px;
+    }
+
+    .project-grid {
+         /* Keep auto-fit, or force 2 columns: */
+         /* grid-template-columns: repeat(2, 1fr); */
+         gap: 1.2rem; /* Adjust gap */
+    }
+
+    #experience {
+        max-width: 800px;
+    }
+
+     /* Add other adjustments for tablet size if needed */
+} 
