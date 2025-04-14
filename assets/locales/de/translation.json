@@ -1,0 +1,21 @@
+{
+    "pageTitle": "Portfolio Landingpage - Nguyen Duc Loc",
+    "navHome": "Startseite",
+    "navProjects": "Projekte",
+    "navExperience": "Erfahrung",
+    "navContact": "Kontakt",
+    "heroTitle": "Ich code und<br>erstelle Inhalte <span class=\"highlight\">darüber!</span>",
+    "heroSubtitle": "Ich bin ein Full-Stack-Entwickler mit 1 Jahr praktischer Erfahrung in der Web- und Mobil-App-Entwicklung. Meine Leidenschaft liegt in der Erforschung und Implementierung von KI-gestützten Automatisierungslösungen zur Verbesserung von Entwicklungsworkflows. Ich bin darauf spezialisiert, effiziente, benutzerfreundliche Anwendungen zu erstellen und dabei modernste KI-Tools zur Steigerung der Produktivität zu nutzen.",
+    "getInTouchBtn": "Kontakt aufnehmen",
+    "downloadCvBtn": "Lebenslauf herunterladen",
+    "techStackTitle": "ERFAHRUNG MIT",
+    "projectsTitle": "PROJEKTE",
+    "projectVisit": "HIER KLICKEN ZUM BESUCHEN",
+    "projectHtmlTitle": "HTML-TUTORIAL",
+    "projectCssTitle": "CSS-TUTORIAL",
+    "experienceTitle": "ERFAHRUNG",
+    "experienceUpdating": "Wird aktualisiert...",
+    "contactTitle": "Kontakt",
+    "contactDesc": "Wird aktualisiert...",
+    "footerCopyright": "&copy; 2024 Nguyen Duc Loc. Alle Rechte vorbehalten."
+} 

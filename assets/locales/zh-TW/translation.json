@@ -1,0 +1,21 @@
+{
+    "pageTitle": "作品集登陸頁面 - Nguyen Duc Loc",
+    "navHome": "首頁",
+    "navProjects": "專案",
+    "navExperience": "經驗",
+    "navContact": "聯絡",
+    "heroTitle": "我寫程式，<br>並製作相關<span class=\"highlight\">內容！</span>",
+    "heroSubtitle": "我是一名全端開發者，在網頁和行動應用程式開發方面有1年的實務經驗。我熱衷於探索和實施基於人工智慧的自動化解決方案，以提升開發工作流程。我專注於創建高效、使用者友善的應用程式，同時利用最先進的人工智慧工具來提高生產力。",
+    "getInTouchBtn": "聯絡我",
+    "downloadCvBtn": "下載履歷",
+    "techStackTitle": "技術棧經驗",
+    "projectsTitle": "專案",
+    "projectVisit": "點擊此處訪問",
+    "projectHtmlTitle": "HTML教程",
+    "projectCssTitle": "CSS教程",
+    "experienceTitle": "經驗",
+    "experienceUpdating": "更新中...",
+    "contactTitle": "聯絡方式",
+    "contactDesc": "更新中...",
+    "footerCopyright": "&copy; 2024 Nguyen Duc Loc. 版權所有。"
+} 

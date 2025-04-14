@@ -1,3 +1,30 @@
+/* Theme Variables */
+:root {
+    /* Light Theme (default) */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text-primary: #121212;
+    --text-secondary: #6c757d;
+    --accent-color: #007bff;
+    --border-color: #dee2e6;
+    --card-bg: #ffffff;
+    --card-content-bg: #1f1f1f;
+    --card-text: #ffffff;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-secondary: #1f1f1f;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --accent-color: #4a90e2;
+    --border-color: #333333;
+    --card-bg: #1f1f1f;
+    --card-content-bg: #2d2d2d;
+    --card-text: #ffffff;
+}
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -7,9 +34,10 @@
 
 body {
     font-family: sans-serif; /* Choose a suitable font */
-    background-color: #ffffff; /* Changed to white background */
-    color: #121212; /* Changed to dark text color for contrast */
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img {
@@ -44,12 +72,12 @@ h1, h2, h3 {
 
 /* Header/Nav */
 header {
-    background: #f8f9fa; /* Changed to light gray background */
+    background: var(--bg-secondary);
     padding: 1rem 0;
     position: sticky; /* Optional: make navbar sticky */
     top: 0;
     z-index: 10;
-    border-bottom: 1px solid #dee2e6; /* Add a subtle border */
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav {
@@ -75,6 +103,19 @@ nav {
     display: block; /* Prevents extra space below image */
 }
 
+/* Theme-based logo display */
+.logo-dark {
+    display: none; /* Hide dark logo by default (in light theme) */
+}
+
+[data-theme="dark"] .logo-light {
+    display: none; /* Hide light logo in dark theme */
+}
+
+[data-theme="dark"] .logo-dark {
+    display: block; /* Show dark logo in dark theme */
+}
+
 .nav-links {
     display: flex;
 }
@@ -84,12 +125,12 @@ nav {
 }
 
 .nav-links a {
-    color: #6c757d; /* Darker gray for links */
+    color: var(--text-secondary);
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #343a40; /* Even darker on hover */
+    color: var(--text-primary);
 }
 
 /* Hero Section */
@@ -114,7 +155,7 @@ nav {
 #hero .subtitle {
     max-width: 600px;
     margin: 0 auto 2rem auto;
-    color: #6c757d; /* Darker gray for subtitle */
+    color: var(--text-secondary);
 }
 
 .hero-buttons button {
@@ -128,35 +169,35 @@ nav {
 }
 
 .btn-primary {
-    background-color: #343a40; /* Dark background for primary button */
-    color: #ffffff; /* White text */
-    border: 1px solid #343a40;
+    background-color: var(--accent-color);
+    color: var(--card-text);
+    border: 1px solid var(--accent-color);
 }
 
 .btn-primary:hover {
-    background-color: #23272b; /* Slightly darker on hover */
-    border-color: #1d2124;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .btn-secondary {
-    background-color: #e9ecef; /* Light gray background */
-    color: #343a40; /* Dark text */
-    border: 1px solid #ced4da; /* Gray border */
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
 }
 
 .btn-secondary:hover {
-    background-color: #dee2e6; /* Slightly darker gray on hover */
+    background-color: var(--bg-secondary);
 }
 
 /* Tech Stack Section */
 #tech-stack {
     text-align: center;
     padding: 2rem 20px;
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: var(--bg-secondary);
 }
 
 #tech-stack h2 {
-    color: #6c757d; /* Darker gray */
+    color: var(--text-secondary);
     font-size: 0.9rem;
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
@@ -181,7 +222,7 @@ nav {
 */
 
 #tech-stack .logos i {
-    color: #495057; /* Set icon color */
+    color: var(--text-primary);
     /* fa-2x already sets size */
 }
 
@@ -194,7 +235,7 @@ nav {
 
 #projects h2 {
     text-align: center;
-    color: #fd7e14; /* Adjusted Orange color */
+    color: var(--accent-color);
     margin-bottom: 2rem;
 }
 
@@ -205,7 +246,7 @@ nav {
 }
 
 .project-card {
-    /* background-color: #ffffff; */ /* Keep image background */
+    background-color: var(--card-bg);
     border-radius: 10px;
     overflow: hidden;
     position: relative; /* For positioning content */
@@ -221,13 +262,14 @@ nav {
 
 .project-card .card-content {
     padding: 1rem; /* Adjust padding as needed */
-    background-color: #1f1f1f; /* Dark background like original image */
+    background-color: var(--card-content-bg);
+    color: var(--card-text);
 }
 
 .card-subtitle {
     display: block;
     font-size: 0.75rem; /* Slightly smaller */
-    color: #a0a0a0; /* Light gray color */
+    color: var(--text-secondary);
     margin-bottom: 0.3rem;
     text-transform: uppercase; /* Make uppercase like image */
     letter-spacing: 0.5px;
@@ -235,13 +277,13 @@ nav {
 
 .card-content h3 {
     margin-bottom: 0.5rem;
-    color: #ffffff; /* White color for title */
+    color: var(--card-text);
     font-size: 1.1rem; /* Adjust size if needed */
 }
 
 .arrow-link {
     font-size: 1.2rem; /* Adjust icon size */
-    color: #a0a0a0; /* Light gray color */
+    color: var(--text-secondary);
     position: absolute;
     bottom: 1rem; /* Position at bottom */
     right: 1rem; /* Position at right */
@@ -249,7 +291,7 @@ nav {
 }
 
 .arrow-link:hover {
-    color: #ffffff; /* White on hover */
+    color: var(--card-text);
 }
 
 /* Experience Section */
@@ -261,7 +303,7 @@ nav {
 
 #experience h2 {
     text-align: center;
-    color: #007bff; /* Adjusted Blue color */
+    color: var(--accent-color);
     margin-bottom: 2rem;
 }
 
@@ -288,7 +330,7 @@ nav {
 
 /* Style for Font Awesome company logo icons */
 .company-logo-icon {
-    color: #6c757d; /* Set icon color */
+    color: var(--text-secondary);
     width: 40px; /* Define width for alignment */
     text-align: center; /* Center icon horizontally */
     flex-shrink: 0;
@@ -299,36 +341,36 @@ nav {
 .experience-details h3 {
     margin-bottom: 0.25rem;
     font-size: 1.2rem;
-    color: #343a40; /* Darker heading */
+    color: var(--text-primary);
 }
 
 .duration {
     display: block;
     font-size: 0.9rem;
-    color: #6c757d; /* Darker gray */
+    color: var(--text-secondary);
     margin-bottom: 0.5rem;
 }
 
 .experience-details p {
-    color: #495057; /* Slightly lighter dark gray for paragraph */
+    color: var(--text-primary);
 }
 
 /* Contact Section */
 #contact {
     padding: 4rem 20px;
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: var(--bg-primary);
     text-align: center;
 }
 
 #contact h2 {
     margin-bottom: 1rem;
-    color: #343a40; /* Dark heading */
+    color: var(--text-primary);
 }
 
 #contact p {
     max-width: 600px;
     margin: 0 auto 1rem auto;
-    color: #6c757d; /* Darker gray */
+    color: var(--text-secondary);
 }
 
 #contact .email {
@@ -339,7 +381,7 @@ nav {
 }
 
 #contact .email a {
-    color: #007bff; /* Blue link color */
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -357,18 +399,18 @@ nav {
 
 /* Style for Font Awesome email icon */
 #contact .email .icon {
-    color: #6c757d; /* Set icon color */
+    color: var(--text-secondary);
     font-size: 1.2rem; /* Adjust size if needed */
 }
 
 .social-icons a {
     margin: 0 10px;
-    color: #6c757d; /* Set base color for social icons */
+    color: var(--text-secondary);
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #343a40; /* Darker color on hover */
+    color: var(--text-primary);
 }
 
 /* Remove old social-icons img styling */
@@ -394,7 +436,7 @@ footer {
     padding: 1rem 20px;
     margin-top: 2rem;
     font-size: 0.9rem;
-    color: #6c757d; /* Darker gray */
+    color: var(--text-secondary);
 }
 
 /* Add Media Queries for Responsiveness */
@@ -482,4 +524,58 @@ footer {
     }
 
      /* Add other adjustments for tablet size if needed */
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+#theme-toggle-btn {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 8px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+#theme-toggle-btn:hover {
+    color: var(--accent-color);
+}
+
+/* Add transition effects for smooth theme switching */
+.project-card,
+.card-content,
+#tech-stack,
+header,
+.nav-links a,
+.social-icons a {
+    transition: all 0.3s ease;
+}
+
+/* Language Switcher Dropdown */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 15px; /* Add some space */
+}
+
+#language-select {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 5px; /* Space after toggle */
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#language-select:focus {
+    border-color: var(--accent-color);
 } 

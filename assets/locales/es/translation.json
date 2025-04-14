@@ -1,0 +1,21 @@
+{
+    "pageTitle": "Página de Presentación Portfolio - Nguyen Duc Loc",
+    "navHome": "Inicio",
+    "navProjects": "Proyectos",
+    "navExperience": "Experiencia",
+    "navContact": "Contacto",
+    "heroTitle": "¡Yo programo y<br>creo contenido <span class=\"highlight\">sobre ello!</span>",
+    "heroSubtitle": "Soy un Desarrollador Full-stack con 1 año de experiencia práctica en desarrollo de aplicaciones web y móviles. Mi pasión reside en explorar e implementar soluciones de automatización impulsadas por IA para mejorar los flujos de trabajo de desarrollo. Me especializo en crear aplicaciones eficientes y fáciles de usar, aprovechando herramientas de IA de vanguardia para mejorar la productividad.",
+    "getInTouchBtn": "Contactar",
+    "downloadCvBtn": "Descargar CV",
+    "techStackTitle": "EXPERIENCIA CON",
+    "projectsTitle": "PROYECTOS",
+    "projectVisit": "HAZ CLIC AQUÍ PARA VISITAR",
+    "projectHtmlTitle": "TUTORIAL HTML",
+    "projectCssTitle": "TUTORIAL CSS",
+    "experienceTitle": "EXPERIENCIA",
+    "experienceUpdating": "Actualizando...",
+    "contactTitle": "Contacto",
+    "contactDesc": "Actualizando...",
+    "footerCopyright": "&copy; 2024 Nguyen Duc Loc. Todos los derechos reservados."
+} 

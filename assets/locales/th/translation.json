@@ -1,0 +1,21 @@
+{
+    "pageTitle": "เว็บไซต์แสดงผลงาน - Nguyen Duc Loc",
+    "navHome": "หน้าหลัก",
+    "navProjects": "โปรเจกต์",
+    "navExperience": "ประสบการณ์",
+    "navContact": "ติดต่อ",
+    "heroTitle": "ฉันเขียนโค้ด<br>และสร้างเนื้อหา<span class=\"highlight\">เกี่ยวกับมัน!</span>",
+    "heroSubtitle": "ฉันเป็นนักพัฒนาแบบ Full-stack ที่มีประสบการณ์ตรง 1 ปีในการพัฒนาเว็บและแอปพลิเคชันมือถือ ความหลงใหลของฉันอยู่ที่การสำรวจและการนำโซลูชันอัตโนมัติที่ขับเคลื่อนด้วย AI มาใช้เพื่อเพิ่มประสิทธิภาพในกระบวนการพัฒนา ฉันเชี่ยวชาญในการสร้างแอปพลิเคชันที่มีประสิทธิภาพและเป็นมิตรกับผู้ใช้ ในขณะเดียวกันก็ใช้เครื่องมือ AI ล่าสุดเพื่อเพิ่มผลผลิต",
+    "getInTouchBtn": "ติดต่อฉัน",
+    "downloadCvBtn": "ดาวน์โหลด CV",
+    "techStackTitle": "ประสบการณ์กับ",
+    "projectsTitle": "โปรเจกต์",
+    "projectVisit": "คลิกที่นี่เพื่อเยี่ยมชม",
+    "projectHtmlTitle": "บทเรียน HTML",
+    "projectCssTitle": "บทเรียน CSS",
+    "experienceTitle": "ประสบการณ์",
+    "experienceUpdating": "กำลังอัพเดท...",
+    "contactTitle": "ติดต่อ",
+    "contactDesc": "กำลังอัพเดท...",
+    "footerCopyright": "&copy; 2024 Nguyen Duc Loc สงวนลิขสิทธิ์"
+} 

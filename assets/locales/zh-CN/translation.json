@@ -1,0 +1,21 @@
+{
+    "pageTitle": "作品集登陆页面 - Nguyen Duc Loc",
+    "navHome": "首页",
+    "navProjects": "项目",
+    "navExperience": "经验",
+    "navContact": "联系",
+    "heroTitle": "我写代码，<br>并制作相关<span class=\"highlight\">内容！</span>",
+    "heroSubtitle": "我是一名全栈开发者，在网页和移动应用开发方面有1年的实践经验。我热衷于探索和实施基于人工智能的自动化解决方案，以提升开发工作流程。我专注于创建高效、用户友好的应用程序，同时利用最先进的人工智能工具来提高生产力。",
+    "getInTouchBtn": "联系我",
+    "downloadCvBtn": "下载简历",
+    "techStackTitle": "技术栈经验",
+    "projectsTitle": "项目",
+    "projectVisit": "点击此处访问",
+    "projectHtmlTitle": "HTML教程",
+    "projectCssTitle": "CSS教程",
+    "experienceTitle": "经验",
+    "experienceUpdating": "更新中...",
+    "contactTitle": "联系方式",
+    "contactDesc": "更新中...",
+    "footerCopyright": "&copy; 2024 Nguyen Duc Loc. 版权所有。"
+} 

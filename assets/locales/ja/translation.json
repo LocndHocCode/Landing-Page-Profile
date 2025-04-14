@@ -1,0 +1,21 @@
+{
+    "pageTitle": "ポートフォリオランディングページ - Nguyen Duc Loc",
+    "navHome": "ホーム",
+    "navProjects": "プロジェクト",
+    "navExperience": "経験",
+    "navContact": "連絡先",
+    "heroTitle": "私はコードを書き、<br>それに関する<span class=\"highlight\">コンテンツを作成します！</span>",
+    "heroSubtitle": "私はウェブおよびモバイルアプリ開発で1年の実務経験を持つフルスタック開発者です。私の情熱は、開発ワークフローを強化するためのAIを活用した自動化ソリューションを探求し、実装することにあります。効率的でユーザーフレンドリーなアプリケーションを作成し、生産性向上のために最先端のAIツールを活用することを専門としています。",
+    "getInTouchBtn": "連絡を取る",
+    "downloadCvBtn": "履歴書をダウンロード",
+    "techStackTitle": "経験のある技術",
+    "projectsTitle": "プロジェクト",
+    "projectVisit": "ここをクリックして訪問",
+    "projectHtmlTitle": "HTMLチュートリアル",
+    "projectCssTitle": "CSSチュートリアル",
+    "experienceTitle": "経験",
+    "experienceUpdating": "更新中...",
+    "contactTitle": "連絡先",
+    "contactDesc": "更新中...",
+    "footerCopyright": "&copy; 2024 Nguyen Duc Loc. 無断複写・転載を禁じます。"
+} 

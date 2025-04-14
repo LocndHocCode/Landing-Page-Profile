@@ -1,0 +1,21 @@
+{
+    "pageTitle": "Portfolio Landing Page - Nguyen Duc Loc",
+    "navHome": "Home",
+    "navProjects": "Projects",
+    "navExperience": "Experience",
+    "navContact": "Contact",
+    "heroTitle": "I do code and<br>make content <span class=\"highlight\">about it!</span>",
+    "heroSubtitle": "I'm a Full-stack Developer with 1 year of hands-on experience in web and mobile app development. My passion lies in exploring and implementing AI-powered automation solutions to enhance development workflows. I specialize in creating efficient, user-friendly applications while leveraging cutting-edge AI tools for improved productivity.",
+    "getInTouchBtn": "Get In Touch",
+    "downloadCvBtn": "Download CV",
+    "techStackTitle": "EXPERIENCE WITH",
+    "projectsTitle": "PROJECTS",
+    "projectVisit": "CLICK HERE TO VISIT",
+    "projectHtmlTitle": "HTML TUTORIAL",
+    "projectCssTitle": "CSS TUTORIAL",
+    "experienceTitle": "EXPERIENCE",
+    "experienceUpdating": "Updating...",
+    "contactTitle": "Contact",
+    "contactDesc": "Updating...",
+    "footerCopyright": "&copy; 2024 Nguyen Duc Loc. All rights reserved."
+} 

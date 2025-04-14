@@ -1,0 +1,21 @@
+{
+    "pageTitle": "Портфоліо - Nguyen Duc Loc",
+    "navHome": "Головна",
+    "navProjects": "Проєкти",
+    "navExperience": "Досвід",
+    "navContact": "Контакти",
+    "heroTitle": "Я пишу код і<br>створюю контент <span class=\"highlight\">про це!</span>",
+    "heroSubtitle": "Я Full-stack розробник з річним практичним досвідом у розробці веб- та мобільних додатків. Моя пристрасть полягає у дослідженні та впровадженні рішень автоматизації на базі ШІ для покращення робочих процесів розробки. Я спеціалізуюся на створенні ефективних, зручних додатків, використовуючи передові інструменти ШІ для підвищення продуктивності.",
+    "getInTouchBtn": "Зв'язатися",
+    "downloadCvBtn": "Завантажити резюме",
+    "techStackTitle": "ДОСВІД РОБОТИ З",
+    "projectsTitle": "ПРОЄКТИ",
+    "projectVisit": "НАТИСНІТЬ ТУТ, ЩОБ ВІДВІДАТИ",
+    "projectHtmlTitle": "ПІДРУЧНИК HTML",
+    "projectCssTitle": "ПІДРУЧНИК CSS",
+    "experienceTitle": "ДОСВІД",
+    "experienceUpdating": "Оновлюється...",
+    "contactTitle": "Контакти",
+    "contactDesc": "Оновлюється...",
+    "footerCopyright": "&copy; 2024 Nguyen Duc Loc. Усі права захищено."
+} 

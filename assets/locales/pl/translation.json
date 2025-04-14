@@ -1,0 +1,21 @@
+{
+    "pageTitle": "Strona Portfolio - Nguyen Duc Loc",
+    "navHome": "Strona główna",
+    "navProjects": "Projekty",
+    "navExperience": "Doświadczenie",
+    "navContact": "Kontakt",
+    "heroTitle": "Programuję i<br>tworzę treści <span class=\"highlight\">na ten temat!</span>",
+    "heroSubtitle": "Jestem Full-stack Developerem z rocznym praktycznym doświadczeniem w tworzeniu aplikacji internetowych i mobilnych. Moją pasją jest odkrywanie i wdrażanie rozwiązań automatyzacji opartych na AI w celu usprawnienia procesów programistycznych. Specjalizuję się w tworzeniu wydajnych, przyjaznych dla użytkownika aplikacji, wykorzystując najnowocześniejsze narzędzia AI do zwiększania produktywności.",
+    "getInTouchBtn": "Skontaktuj się",
+    "downloadCvBtn": "Pobierz CV",
+    "techStackTitle": "DOŚWIADCZENIE Z",
+    "projectsTitle": "PROJEKTY",
+    "projectVisit": "KLIKNIJ TUTAJ, ABY ODWIEDZIĆ",
+    "projectHtmlTitle": "PORADNIK HTML",
+    "projectCssTitle": "PORADNIK CSS",
+    "experienceTitle": "DOŚWIADCZENIE",
+    "experienceUpdating": "Aktualizacja...",
+    "contactTitle": "Kontakt",
+    "contactDesc": "Aktualizacja...",
+    "footerCopyright": "&copy; 2024 Nguyen Duc Loc. Wszelkie prawa zastrzeżone."
+} 
